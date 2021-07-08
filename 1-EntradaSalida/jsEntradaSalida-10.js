@@ -1,9 +1,31 @@
 /*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+Autor: Jonathan Joel Pastorino Marotti
+Ejercicio: 10 bis
+Debemos lograr tomar el importe por ID ,
+transformarlo a entero (parseInt), luego
+mostrar el importe con un aumento del 10 %
+en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
-	alert("ok");
+
+	var importe;
+	var descuento;
+	var resultado;
+   
+
+    importe = prompt("Ingrese el importe", "Aquí ☻");
+	importe = document.getElementById('txtIdImporte').value;
+	importe = parseInt(importe);
+
+	descuento = importe * 25 / 100;
+
+	resultado = importe - descuento;
+
+
+	document.getElementById('txtIdResultado').value = resultado;
+
+	mensaje="Su descuento es de " + resultado + " pesos.";
+
+	alert(mensaje);
+
 }
