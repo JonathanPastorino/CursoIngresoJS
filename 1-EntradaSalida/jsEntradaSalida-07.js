@@ -16,9 +16,11 @@ function sumar()
     primerNumero=parseInt(primerNumero)
    
     segundoNumero=document.getElementById('txtIdNumeroDos').value;
-	segundoNumero=parseInt(segundoNumero);
+	segundoNumero=parseInt(segundoNumero)
 
 	suma= primerNumero + segundoNumero;
+
+	sumar=suma;
 
 	mensaje= "resultado: " + suma;
 
@@ -36,7 +38,7 @@ function restar()
     primerNumero=parseInt(primerNumero)
    
     segundoNumero=document.getElementById('txtIdNumeroDos').value;
-	segundoNumero=parseInt(segundoNumero);
+	segundoNumero=parseInt(segundoNumero)
 
 	resta= primerNumero - segundoNumero;
 
@@ -56,7 +58,7 @@ function multiplicar()
     primerNumero=parseInt(primerNumero)
    
     segundoNumero=document.getElementById('txtIdNumeroDos').value;
-	segundoNumero=parseInt(segundoNumero);
+	segundoNumero=parseInt(segundoNumero)
 
 	multiplicar= primerNumero * segundoNumero;
 
@@ -76,7 +78,7 @@ function dividir()
     primerNumero=parseInt(primerNumero)
    
     segundoNumero=document.getElementById('txtIdNumeroDos').value;
-	segundoNumero=parseInt(segundoNumero);
+	segundoNumero=parseInt(segundoNumero)
 
 	dividir= primerNumero / segundoNumero;
 
