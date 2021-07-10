@@ -12,7 +12,7 @@ function Rectangulo ()
 	var largo;
 	var ancho;
 	var sumar;
-	var mmultiplicar;
+	var multiplicar;
 
 	largo=document.getElementById('txtIdLargo').value;
 	largo=parseInt(largo)
@@ -21,19 +21,54 @@ function Rectangulo ()
 
 	sumar= largo + ancho;
 
-	mmultiplicar= sumar*3;
+	multiplicar= sumar*3;
 
-	mensaje= "Se necesitan "+ mmultiplicar + " metros de alambre"
+	mensaje= "Se necesitan "+ multiplicar + " metros de alambre"
 
 	alert(mensaje)
 
 
 }
+
 function Circulo () 
-{
+ {  
+
+	var radio;
+	var resultado;
+
+	radio=document.getElementById('txtIdRadio').value;
+	radio=parseInt(radio)
+
+	resultado= radio*6.28; //(6.28=2π)
+
+	mensaje= "se necesitan "+ resultado + " metros de alambre"
+
+	alert(mensaje)
+
 	
 }
+
 function Materiales () 
 {
+	var largo;
+	var ancho;
+	var sumar;
+	var bolsasCemento;
+	var bolsasCal;
+
+	largo=document.getElementById('txtIdLargo').value;
+	largo=parseInt(largo)
+	ancho=document.getElementById('txtIdAncho').value;
+	ancho=parseInt(ancho)
+
+	sumar= largo + ancho;
+
+	bolsasCemento= sumar*1;
+
+	bolsasCal= sumar*1.5;
+
+	mensaje= "Se necesitan "+ bolsasCemento + " bolsas de cemento y "+ bolsasCal + " bolsas de cal"
+
+	alert(mensaje)
 	
 }
