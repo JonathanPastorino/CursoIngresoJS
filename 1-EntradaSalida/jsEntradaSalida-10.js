@@ -13,9 +13,10 @@ function mostrarAumento()
 	var resultado;
    
 
-    importe = prompt("Ingrese el importe", "Aquí ☻");
 	importe = document.getElementById('txtIdImporte').value;
 	importe = parseInt(importe);
+
+	importe = prompt("Ingrese el importe");
 
 	descuento = importe * 25 / 100;
 
